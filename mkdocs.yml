@@ -1,0 +1,50 @@
+site_name: 'BIPES'
+nav:
+  - CoderDojo Mentor Resources: https://coderdojotc.github.io/bipes/
+  - BIPES Home: index.md
+  - Introduction:
+    - About BIPES: intro/01-about.md
+  - Getting Started:
+    - Setup: getting-started/setup.md
+
+  - Basic Examples:
+    - Introduction: basics/01-intro.md
+
+  - Sensors:
+    - Introduction: sensors/01-intro.md
+
+  - Motors and Servos:
+    - Introduction: motors/01-intro.md
+
+ 
+  - Glossary: glossary.md
+  - References: references.md
+  - Contributing: contributing.md
+  - Contact: contact.md
+
+site_description: 'Resources for teaching BIPES to CoderDojo Twin Cities students.  All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_author: 'Dan McCreary'
+repo_name: 'GitHub Repo'
+repo_url: 'https://github.com/CoderDojoTC/bipes'
+
+# CoderDojo Standards from here down
+edit_uri: 'blob/master/docs'
+theme:
+  # should be name: material
+  name: material
+  logo: img/coderdojo-logo.png
+  palette:
+    primary: '#642580'
+    accent: '#41BAC1'
+  custom_dir: 'theme'
+  include_sidebar: true
+plugins:
+  - search
+  # - mermaid2 - takes too long to build - use a screen image for now
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.details
+  - pymdownx.superfences
