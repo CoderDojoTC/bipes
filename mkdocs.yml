@@ -2,29 +2,24 @@ site_name: 'BIPES'
 nav:
   - CoderDojo Mentor Resources: https://coderdojotc.github.io/bipes/
   - BIPES Home: index.md
-  - Introduction: intro/01-about.md
-    - About BIPES: intro/01-about.md
+  - Introduction:
+    - About BIPES: intro/01-intro.md
     - Getting Started: intro/02-getting-started.md
-
   - Basic Examples:
     - Introduction: basics/01-intro.md
     - Lab 2: basics/02-lab.md
     - Lab 3: basics/03-lab.md
-
   - Sensors:
     - Introduction: sensors/01-intro.md
-
   - Motors and Servos:
     - Introduction: motors/01-intro.md
-
- 
   - Glossary: glossary.md
   - References: references.md
   - Contributing: contributing.md
-  - Contact: contact.md
+  - Contacts: contacts.md
 
 site_description: 'Resources for teaching BIPES to CoderDojo Twin Cities students.  All content licensed Creative Commons ShareAlike Attribution Noncommercial'
-site_author: 'Dan McCreary'
+site_author: 'Dan McCreary and Jim Tannenbaum'
 repo_name: 'GitHub Repo'
 repo_url: 'https://github.com/CoderDojoTC/bipes'
 
