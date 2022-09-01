@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-bipes" class="md-skip">
+        <a href="#getting-started" class="md-skip">
           Skip to content
         </a>
       
@@ -315,15 +315,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    Download
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#working-with-bipes" class="md-nav__link">
+    Working with BIPES
   </a>
   
 </li>
@@ -602,15 +602,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    Download
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#working-with-bipes" class="md-nav__link">
+    Working with BIPES
   </a>
   
 </li>
@@ -633,9 +633,60 @@
 
 
 
-<h1 id="getting-started-with-bipes">Getting Started with BIPES</h1>
-<h2 id="download">Download</h2>
+<h1 id="getting-started">Getting Started</h1>
+<p>Before getting started with BIPES, follow the directions below to setup your microcontroller.</p>
 <h2 id="setup">Setup</h2>
+<p>However, before getting started with BIPES, your microcontroller board must be setup.  Regardless of which board you are using, you should start by doing the following steps:</p>
+<ul>
+<li>
+<p>Download the <a href="https://datasheets.raspberrypi.com/soft/flash_nuke.uf2">flash_nuke.utf</a> file to your computer.</p>
+</li>
+<li>
+<p>Download the latest <a href="https://micropython.org/download/rp2-pico/rp2-pico-latest.uf2">MicroPython utf</a> file to your computer. </p>
+</li>
+<li>
+<p>Hold down the BOOTSEL button on the Pico or the BOOT button on the Maker Pi then connect your microcontroller board to your computer with a micro usb cable and it will appear as a drive onto which you can drag the flash_nuke.uf2 file</p>
+<ul>
+<li>If you don't see the Maker Pi board, make sure the on/off switch is in the on position before connecting to your computer.</li>
+</ul>
+</li>
+<li>
+<p>Once the drive reappears, copy the MicroPython utf file to your device.</p>
+</li>
+</ul>
+<p>If you are having trouble, take a look at the <a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython">Drag-and-Drop MicroPython page</a></p>
+<h2 id="working-with-bipes">Working with BIPES</h2>
+<p>Working with BIPES is easy, since there is nothing to load on your computer. <a href="https://bipes.net.br/pico/ui/">BIPES can be found online</a>.  Once the Welcome screen loads in your browser, you can do the following:</p>
+<ul>
+<li>
+<p>Close the Welcome screen</p>
+</li>
+<li>
+<p>Select your board:</p>
+<ul>
+<li>
+<p>The Raspberry Pi Pico <img alt="Pico" src="../../img/selectPico.png" /></p>
+</li>
+<li>
+<p>The Maker Pi RP2040 <img alt="MakerPi" src="../../img/selectMakerPi.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Connect to your board</p>
+<ul>
+<li>
+<p>Serial connection <img alt="Serial" src="../../img/serialConnect1.png" /></p>
+</li>
+<li>
+<p>Select the comm port for your board</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Congratulations!  You are ready to start using BIPES.</p>
+</li>
+</ul>
 
 
 
