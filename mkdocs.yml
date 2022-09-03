@@ -5,14 +5,15 @@ nav:
   - Introduction:
     - About BIPES: intro/01-intro.md
     - Getting Started: intro/02-getting-started.md
-  - Basic Examples:
-    - Introduction: basics/01-intro.md
-    - Lab 2: basics/02-lab.md
-    - Lab 3: basics/03-lab.md
-  - Sensors:
-    - Introduction: sensors/01-intro.md
-  - Motors and Servos:
-    - Introduction: motors/01-intro.md
+  - Raspberry Pi Pico:
+    - Basic Examples:
+      - Introduction: pico/basics/01-intro.md
+      - Blink: pico/basics/blink.md
+      - Lab 3: pico/basics/03-lab.md
+    - Sensors:
+      - Introduction: pico/sensors/01-intro.md
+    - Motors and Servos:
+      - Introduction: pico/motors/01-intro.md
   - Glossary: glossary.md
   - References: references.md
   - Contributing: contributing.md

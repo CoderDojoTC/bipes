@@ -36,4 +36,8 @@ If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](h
 
     - Select the comm port for your board
 
+- The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.
+
+![leftNav](../../img/leftNav.png)
+
 - Congratulations!  You are ready to start using BIPES.
