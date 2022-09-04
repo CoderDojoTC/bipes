@@ -31,7 +31,7 @@ This program will blink the built-in LED on and off every 1/4 of a second.  By c
     What is the fastest you can make the LED blink and still see it changing?  What does this tell you about the human eye?
 
 ### Blinking external LEDs
-Although the builtin LED is convenient, you can use the code to blink any nmber of external LEDs that are connected through a 330 ohm resister in series to the LED.
+Although the builtin LED is convenient, you can use the code to blink any number of external LEDs that are connected through a 330 ohm resister in series to the LED.
 
 Hints:
 
@@ -42,6 +42,6 @@ Hints:
 
 ![BIPES external LEDS](../../img/pico/externalLEDS.jpg)
 
-Here are the blocks that will blink the LEDs that are connected to GPIO16 & GPIO17, this time 10 times.
+Here are the blocks that will blink the LEDs that are connected to GPIO16 & GPIO17 time 10 times, then turn off the remaining lit LED.
 
 ![BIPES external LEDS Blocks](../../img/pico/externalLEDsBlocks.jpg)

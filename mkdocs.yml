@@ -9,7 +9,8 @@ nav:
     - Basic Examples:
       - Introduction: pico/basics/01-intro.md
       - Blink: pico/basics/blink.md
-      - Lab 3: pico/basics/03-lab.md
+      - Fade in and out: pico/basics/fadeInAndOut.md
+      - Button: pico/basics/button.md
     - Sensors:
       - Introduction: pico/sensors/01-intro.md
     - Motors and Servos:
