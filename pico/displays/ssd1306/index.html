@@ -17,7 +17,7 @@
     
     
       
-        <title>NeoPixel - BIPES</title>
+        <title>SSD1306 OLED - BIPES</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#neopixels" class="md-skip">
+        <a href="#oled-ssd1306-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NeoPixel
+              SSD1306 OLED
             
           </span>
         </div>
@@ -341,14 +341,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
       
       
       
@@ -371,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blink/" class="md-nav__link">
+      <a href="../../basics/blink/" class="md-nav__link">
         Blink
       </a>
     </li>
@@ -385,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fadeInAndOut/" class="md-nav__link">
+      <a href="../../basics/fadeInAndOut/" class="md-nav__link">
         Fade in and out
       </a>
     </li>
@@ -399,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../button/" class="md-nav__link">
+      <a href="../../basics/button/" class="md-nav__link">
         Button
       </a>
     </li>
@@ -413,13 +411,48 @@
   
   
     <li class="md-nav__item">
-      <a href="../potentiometer/" class="md-nav__link">
+      <a href="../../basics/potentiometer/" class="md-nav__link">
         Potentiometer
       </a>
     </li>
   
 
             
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Displays
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Displays" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Displays
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -437,12 +470,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          NeoPixel
+          SSD1306 OLED
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        NeoPixel
+        SSD1306 OLED
       </a>
       
         
@@ -461,71 +494,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#different-types-of-neopixels" class="md-nav__link">
-    Different Types of NeoPixels
+  <a href="#using-the-ssd1306-with-i2c-interfaces" class="md-nav__link">
+    Using the SSD1306 with I2C Interfaces
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#circuit-connections" class="md-nav__link">
-    Circuit connections
+  <a href="#hello-world" class="md-nav__link">
+    Hello World
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-parameters" class="md-nav__link">
-    Setup Parameters
+  <a href="#counter-example" class="md-nav__link">
+    Counter Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sample-programs" class="md-nav__link">
-    Sample Programs
+  <a href="#animated-box" class="md-nav__link">
+    Animated Box
   </a>
-  
-    <nav class="md-nav" aria-label="Sample Programs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#move-red-pixel-across-strip" class="md-nav__link">
-    Move Red Pixel Across Strip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fade-in-and-out" class="md-nav__link">
-    Fade in and Out
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#heartbeat-lab" class="md-nav__link">
-    Heartbeat Lab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move-red-green-and-blue" class="md-nav__link">
-    Move Red, Green and Blue
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rainbow-cycle" class="md-nav__link">
-    Rainbow Cycle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -540,6 +532,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neopixel/" class="md-nav__link">
+        NeoPixel
+      </a>
     </li>
   
 
@@ -561,18 +567,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_4">
           Sensors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Sensors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           Sensors
         </label>
@@ -719,71 +725,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#different-types-of-neopixels" class="md-nav__link">
-    Different Types of NeoPixels
+  <a href="#using-the-ssd1306-with-i2c-interfaces" class="md-nav__link">
+    Using the SSD1306 with I2C Interfaces
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#circuit-connections" class="md-nav__link">
-    Circuit connections
+  <a href="#hello-world" class="md-nav__link">
+    Hello World
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-parameters" class="md-nav__link">
-    Setup Parameters
+  <a href="#counter-example" class="md-nav__link">
+    Counter Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sample-programs" class="md-nav__link">
-    Sample Programs
+  <a href="#animated-box" class="md-nav__link">
+    Animated Box
   </a>
-  
-    <nav class="md-nav" aria-label="Sample Programs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#move-red-pixel-across-strip" class="md-nav__link">
-    Move Red Pixel Across Strip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fade-in-and-out" class="md-nav__link">
-    Fade in and Out
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#heartbeat-lab" class="md-nav__link">
-    Heartbeat Lab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move-red-green-and-blue" class="md-nav__link">
-    Move Red, Green and Blue
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rainbow-cycle" class="md-nav__link">
-    Rainbow Cycle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -806,98 +771,42 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/bipes/blob/master/docs/pico/basics/neopixel.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/bipes/blob/master/docs/pico/displays/ssd1306.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="neopixels">NeoPixels</h1>
-<p><img alt="NeoPixel Demo" src="../../../img/pico/neopixel-demo.gif" /></p>
-<p>NeoPixels are Red-Green-Blue LEDs that are designed to makes them easy to control with three wires: GND, +5V and a single serial data line.  They are very popular with our students because they are powerful, easy to program and full of <strong>bling</strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>As of March of 2022 there is now built-in support for NeoPixels in the MicroPython 1.18 runtime for the Raspberry Pi RP2040 microcontroller.  Although you can still use custom libraries, this tutorial assumes you are using
-version 1.18 or later.</p>
-</div>
-<p>Controlling NeoPixels is challenging since the timing of data being sent must be very precise.  Python alone is not fast enough to send bits out of a serial port.  So a small function that uses assembly code is used.  This code can be called directly from a neopixel driver file so that the user's don't need to see this code.</p>
-<p><a href="https://docs.micropython.org/en/latest/esp8266/tutorial/neopixel.html">MicroPython Example Code on ESP8266</a></p>
-<h2 id="different-types-of-neopixels">Different Types of NeoPixels</h2>
-<p>There are many different types of NeoPixels.  They come in many forms such as strips, rings and matrices.</p>
-<p><img alt="NeoPixel Types" src="../../../img/pico/neopixel-types.jpg" /></p>
-<p>The most common type of NeoPixels are strips.  The strips come in a variety of densities and waterproofing.  The most common and easiest to use are the 60 pixels-per-meter type.</p>
-<h2 id="circuit-connections">Circuit connections</h2>
-<p><img alt="" src="../../../img/pico/led-strip-connections.png" /></p>
-<table>
-<thead>
-<tr>
-<th>LED Strip</th>
-<th>Pico Name</th>
-<th>Pico Pin</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GND</td>
-<td>GND</td>
-<td>38</td>
-<td>Ground</td>
-</tr>
-<tr>
-<td>5v</td>
-<td>VBUS</td>
-<td>40</td>
-<td>Voltage from the USB bus.  Top right with USB on top</td>
-</tr>
-<tr>
-<td>Data</td>
-<td>GP0</td>
-<td>0</td>
-<td>Row 1 on the left side</td>
-</tr>
-</tbody>
-</table>
-<p>Note that you can also power most of the LED strips using the 3.3 volts available on Grove connectors.  The only difference is the brightness might not be quite as high, but for most applications this will not be a problem.</p>
-<h2 id="setup-parameters">Setup Parameters</h2>
-<p>Our block will have two parts:</p>
-<ol>
-<li>Initialization of the NeoPixel object using the static block parameters.  This is also done just once.</li>
-<li>Sending the drawing commands to the device through the data port.  This is usually done within a main loop.</li>
-</ol>
-<h2 id="sample-programs">Sample Programs</h2>
-<p>Now we are ready to write our first small test program!</p>
-<h3 id="move-red-pixel-across-strip">Move Red Pixel Across Strip</h3>
-<p><img alt="Move LED Up Strip" src="../../../img/pico/red-led-move-up.gif" /></p>
-<p><img alt="Move LED Up Strip Block" src="../../../img/pico/redNeoPixelsBlock.jpg" /></p>
-<h3 id="fade-in-and-out">Fade in and Out</h3>
-<p>Make the first pixel fade the red color in and out.  We do this by slowly turning up the color level of the red on the NeoPixel.</p>
-<p>We start a 0 and go up to 255.  Then we go back from 255 back down to zero.  We delay about 5 milliseconds between each of the 255 brightness levels.</p>
-<p><img alt="Move LED Up Strip Block" src="../../../img/pico/fadeNeoPixelBlocks.jpg" /></p>
-<h3 id="heartbeat-lab">Heartbeat Lab</h3>
-<p>What if you were building a robot and you wanted to flash the LED to look like a human heartbeat?  Instead of slowing fading in and out, you would want the brightness to follow the electrical signals coming from the heart.  This is called an electro cardiogram (EKG) and it look like this:</p>
-<p><img alt="EKG Sample" src="../../../img/pico/ekg-sample.png" /></p>
-<p>Notice that the signal is low for about one second and then it spikes up to maximum brightness and then comes back down.  When we are moving the brightness up and down, we don't have to pause between each of the 256 brightness values.  The eye can't usually see the intermediate brightness values if the brightness is changing quickly.  To make our code efficient we can skip over 9 out of 10 of the brightness gradations between 0 and 255.</p>
-<p>The following blocks emulate this heart beat pattern:</p>
-<p><img alt="Heart Beat Blocks" src="../../../img/pico/heartBeatsBlocks.jpg" /></p>
-<h3 id="move-red-green-and-blue">Move Red, Green and Blue</h3>
-<p><img alt="neopixel-red-green-blue" src="../../../img/pico/neopixel-red-green-blue.gif" /></p>
-<p>The following program will just take the blocks in the loop above and move it into a function, then call the function with red, blue, and  green.</p>
-<p><img alt="Red Green Blue Blocks" src="../../../img/pico/redGreenBlueBlocks.jpg" /></p>
-<h3 id="rainbow-cycle">Rainbow Cycle</h3>
-<p>The program cycles each pixel through all the colors in a rainbow.  It uses two functions:</p>
-<ol>
-<li><strong>wheel(pos)</strong> this function takes a position parameter from 0 to 255 and returns a triple of numbers for the red, green and blue values as the position moves around the color wheel.  This is a handy program anytime you want to cycle through all the colors of the rainbow!</li>
-<li><strong>rainbow_cycle</strong> will cycle each of the pixels in a strip through the color wheel.  It gives the appearance that colors are moving across the strip.  The wait is the delay time between updating the colors.  A typical value for wait is .05 seconds or 50 milliseconds.</li>
-</ol>
-<p><img alt="Rainbow Blocks" src="../../../img/pico/rainbowBlocks.jpg" /></p>
+<h1 id="oled-ssd1306-examples">OLED SSD1306 Examples</h1>
+<h2 id="using-the-ssd1306-with-i2c-interfaces">Using the SSD1306 with I2C Interfaces</h2>
+<h2 id="hello-world">Hello World</h2>
+<p><img alt="" src="../../../img/pico/helloWorldBlocks.jpg" /></p>
+<p>After this program runs you should see the text on your OLED display.
+<img alt="" src="../../../img/pico/oled-hello-world.png" /></p>
+<h2 id="counter-example">Counter Example</h2>
+<p>In this example we will updated the display 50 times with a 1/10th of a second pause between each refresh.  A counter will cycle from 1 to 50.</p>
+<p><img alt="" src="../../../img/pico/counterBlocks.jpg" /></p>
+<h2 id="animated-box">Animated Box</h2>
+<p>This draws a title and four lines around a drawing area.  It then draws boxes that move to the right.</p>
+<p><img alt="" src="../../../img/pico/movingBoxBlocks.jpg" /></p>
 <h2 id="references">References</h2>
-<ul>
-<li><a href="https://docs.micropython.org/en/latest/rp2/quickref.html#neopixel-and-apa106-driver">MicroPython RP2 Reference for NeoPixel Driver</a></li>
-<li><a href="https://core-electronics.com.au/tutorials/how-to-use-ws2812b-rgb-leds-with-raspberry-pi-pico.html">Core Electronics: How to use WS2812B RGB LEDs with Raspberry Pi Pico</a> - HTML page, sample code and video</li>
-<li><a href="https://docs.micropython.org/en/latest/library/neopixel.html">MicroPython Library for NeoPixel (used before version 1.18 of the MicroPython RP2 Runtime)</a> - note the lack of support for the RP2040 microcontroller.</li>
-<li><a href="https://github.com/micropython/micropython/issues/6837">rp2 port no module named array</a></li>
-</ul>
+<ol>
+<li>
+<p><a href="https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html">MicroPython Tutorial on the SSD1306</a></p>
+</li>
+<li>
+<p><a href="https://www.mfitzp.com/article/oled-displays-i2c-micropython/">M Fitzp OLED Display i2c Article</a></p>
+</li>
+<li>
+<p><a href="https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/blob/master/examples/ssd1306_stats.py">Adafruit Stats</a></p>
+</li>
+<li>
+<p><a href="https://www.diymore.cc/collections/all-about-arduino/products/2-42-inch-12864-oled-display-module-iic-i2c-spi-serial-for-arduino-c51-stm32-green-white-blue-yellow?variant=17060396597306">DIY More OLED Product Description</a></p>
+</li>
+<li>
+<p><a href="https://github.com/raspberrypi/pico-micropython-examples/blob/master/i2c/1306oled/i2c_1306oled_using_defaults.py">Using I2C Defaults</a></p>
+</li>
+</ol>
 
 
 
@@ -916,7 +825,7 @@ version 1.18 or later.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../potentiometer/" title="Potentiometer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../../basics/potentiometer/" title="Potentiometer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -931,13 +840,13 @@ version 1.18 or later.</p>
             </a>
           
           
-            <a href="../../sensors/photoSensor/" title="Photo sensor" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../neopixel/" title="NeoPixel" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Photo sensor
+                  NeoPixel
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

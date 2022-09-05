@@ -329,22 +329,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-your-connection" class="md-nav__link">
-    Test Your Connection
+  <a href="#using-the-bipes-drag-and-drop-interface" class="md-nav__link">
+    Using the BIPES Drag and Drop Interface
   </a>
   
-    <nav class="md-nav" aria-label="Test Your Connection">
+    <nav class="md-nav" aria-label="Using the BIPES Drag and Drop Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-main-loop" class="md-nav__link">
-    A Main Loop
+  <a href="#adding-a-loop" class="md-nav__link">
+    Adding a loop
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-your-connection" class="md-nav__link">
+    Test Your Connection
+  </a>
   
 </li>
       
@@ -487,13 +494,60 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Displays
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Displays" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Displays
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="../../pico/basics/neopixel/" class="md-nav__link">
+      <a href="../../pico/displays/ssd1306/" class="md-nav__link">
+        SSD1306 OLED
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pico/displays/neopixel/" class="md-nav__link">
         NeoPixel
       </a>
     </li>
@@ -517,18 +571,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_4">
           Sensors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Sensors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           Sensors
         </label>
@@ -689,22 +743,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-your-connection" class="md-nav__link">
-    Test Your Connection
+  <a href="#using-the-bipes-drag-and-drop-interface" class="md-nav__link">
+    Using the BIPES Drag and Drop Interface
   </a>
   
-    <nav class="md-nav" aria-label="Test Your Connection">
+    <nav class="md-nav" aria-label="Using the BIPES Drag and Drop Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-main-loop" class="md-nav__link">
-    A Main Loop
+  <a href="#adding-a-loop" class="md-nav__link">
+    Adding a loop
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-your-connection" class="md-nav__link">
+    Test Your Connection
+  </a>
   
 </li>
       
@@ -753,11 +814,24 @@
 <ul>
 <li>Close the Welcome screen</li>
 </ul>
-<p>There are two configurations you must change.  Your board and the serial port.</p>
-<p><img alt="" src=".img/select-port-and-device.png" /></p>
+<p>There are two configurations you must change.  Your serial port and device.</p>
+<p><img alt="" src="../../img/select-port-and-device.png" /></p>
 <ul>
 <li>
-<p>Select your board:</p>
+<p>Connect to your device</p>
+<ul>
+<li>Serial connection <img alt="Serial" src="../../img/serialConnect1.png" /></li>
+</ul>
+</li>
+</ul>
+<p>On the Mac, the Pico will connect to a port in the <code>/dev/</code> directory such as:</p>
+<p><code>/dev/cu.usbmodem140101</code>
+    - <img alt="Selecting the Serial Port on the Mac" src="../../img/serial-connect-mac.png" /></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>- Select the comm port for your board
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>
+<p>Select your device:</p>
 <ul>
 <li>
 <p>The Raspberry Pi Pico <img alt="Pico" src="../../img/selectPico.png" /></p>
@@ -768,26 +842,16 @@
 </ul>
 </li>
 <li>
-<p>Connect to your board</p>
-<ul>
-<li>Serial connection <img alt="Serial" src="../../img/serialConnect1.png" /></li>
-</ul>
+<p>The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.</p>
 </li>
 </ul>
-<p>On the Mac, the Pico will connect to a port in the <code>/dev/</code> directory such as:</p>
-<p><code>/dev/cu.usbmodem140101</code>
-    - <img alt="Selecting the Serial Port on the Mac" src="./img/serial-connect-mac.png" /></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>- Select the comm port for your board
-</code></pre></div></td></tr></table></div>
-<ul>
-<li>The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.</li>
-</ul>
-<h2 id="test-your-connection">Test Your Connection</h2>
-<p>The best way to test your connection is to write a small program that will flash the on-board LED.</p>
 <p><img alt="leftNav" src="../../img/leftNav.png" /></p>
-<h3 id="a-main-loop">A Main Loop</h3>
-<p><img alt="Add a Main Loop" src="./img/adding-a-main-loop.png" /></p>
-<p><img alt="" src="./img/adding-true.png" /></p>
+<h2 id="using-the-bipes-drag-and-drop-interface">Using the BIPES Drag and Drop Interface</h2>
+<h3 id="adding-a-loop">Adding a loop</h3>
+<p><img alt="Add a Main Loop" src="../../img/adding-a-main-loop.png" /></p>
+<p><img alt="" src="../../img/adding-true.png" /></p>
+<h2 id="test-your-connection">Test Your Connection</h2>
+<p>The best way to test your connection is to write a small program that will flash the on-board LED.  See the basic blink example under Raspberry Pi Pico.</p>
 <ul>
 <li>Congratulations!  You are ready to start using BIPES.</li>
 </ul>
