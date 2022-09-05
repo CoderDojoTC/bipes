@@ -12,7 +12,9 @@ nav:
       - Fade in and out: pico/basics/fadeInAndOut.md
       - Button: pico/basics/button.md
       - Potentiometer: pico/basics/potentiometer.md
-      - NeoPixel: pico/basics/neopixel.md
+    - Displays:
+      - SSD1306 OLED: pico/displays/ssd1306.md
+      - NeoPixel: pico/displays/neopixel.md
     - Sensors:
       - Photo sensor: pico/sensors/photoSensor.md
       - Ping sensor: pico/sensors/pingSensor.md

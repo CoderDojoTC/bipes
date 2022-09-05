@@ -24,40 +24,43 @@ If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](h
 
  - Close the Welcome screen
   
-  There are two configurations you must change.  Your board and the serial port.
+  There are two configurations you must change.  Your serial port and device.
 
-  ![](.img/select-port-and-device.png)
+  ![](../img/select-port-and-device.png)
 
- - Select your board:
-
-    - The Raspberry Pi Pico ![Pico](../../img/selectPico.png)
-    
-    - The Maker Pi RP2040 ![MakerPi](../../img/selectMakerPi.png)
-
-- Connect to your board
+- Connect to your device
 
     - Serial connection ![Serial](../../img/serialConnect1.png)
 
 On the Mac, the Pico will connect to a port in the ```/dev/``` directory such as:
 
 ```/dev/cu.usbmodem140101```
-    - ![Selecting the Serial Port on the Mac](./img/serial-connect-mac.png)
+    - ![Selecting the Serial Port on the Mac](../../img/serial-connect-mac.png)
 
     - Select the comm port for your board
 
+ - Select your device:
+
+    - The Raspberry Pi Pico ![Pico](../../img/selectPico.png)
+    
+    - The Maker Pi RP2040 ![MakerPi](../../img/selectMakerPi.png)
+
+
 - The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.
-
-## Test Your Connection
-
-The best way to test your connection is to write a small program that will flash the on-board LED.
 
 ![leftNav](../../img/leftNav.png)
 
-### A Main Loop
+## Using the BIPES Drag and Drop Interface
 
-![Add a Main Loop](./img/adding-a-main-loop.png)
+### Adding a loop
 
-![](./img/adding-true.png)
+![Add a Main Loop](../../img/adding-a-main-loop.png)
+
+![](../../img/adding-true.png)
+
+## Test Your Connection
+
+The best way to test your connection is to write a small program that will flash the on-board LED.  See the basic blink example under Raspberry Pi Pico.
 
 
 - Congratulations!  You are ready to start using BIPES.
