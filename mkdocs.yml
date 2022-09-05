@@ -6,19 +6,19 @@ nav:
     - About BIPES: intro/01-intro.md
     - Getting Started: intro/02-getting-started.md
   - Raspberry Pi Pico:
+    - Introduction: pico/01-intro.md
     - Basic Examples:
-      - Introduction: pico/basics/01-intro.md
       - Blink: pico/basics/blink.md
       - Fade in and out: pico/basics/fadeInAndOut.md
       - Button: pico/basics/button.md
       - Potentiometer: pico/basics/potentiometer.md
       - NeoPixel: pico/basics/neopixel.md
     - Sensors:
-      - Introduction: pico/sensors/01-intro.md
-    - Motors and Servos:
-      - Introduction: pico/motors/01-intro.md
+      - Photo sensor: pico/sensors/photoSensor.md
+      - Ping sensor: pico/sensors/pingSensor.md
+      - Temperature and humidity sensor (DHT11): pico/sensors/dht11Sensor.md
+      - Inertial measurement sensor (MPU6050): pico/sensors/mpu6050Sensor.md
   - Glossary: glossary.md
-  - References: references.md
   - Contributing: contributing.md
   - Contacts: contacts.md
 
