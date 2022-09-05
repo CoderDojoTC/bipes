@@ -23,6 +23,10 @@ If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](h
  Working with BIPES is easy, since there is nothing to load on your computer. [BIPES can be found online](https://bipes.net.br/pico/ui/).  Once the Welcome screen loads in your browser, you can do the following:
 
  - Close the Welcome screen
+  
+  There are two configurations you must change.  Your board and the serial port.
+
+  ![](.img/select-port-and-device.png)
 
  - Select your board:
 
@@ -34,10 +38,26 @@ If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](h
 
     - Serial connection ![Serial](../../img/serialConnect1.png)
 
+On the Mac, the Pico will connect to a port in the ```/dev/``` directory such as:
+
+```/dev/cu.usbmodem140101```
+    - ![Selecting the Serial Port on the Mac](./img/serial-connect-mac.png)
+
     - Select the comm port for your board
 
 - The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.
 
+## Test Your Connection
+
+The best way to test your connection is to write a small program that will flash the on-board LED.
+
 ![leftNav](../../img/leftNav.png)
+
+### A Main Loop
+
+![Add a Main Loop](./img/adding-a-main-loop.png)
+
+![](./img/adding-true.png)
+
 
 - Congratulations!  You are ready to start using BIPES.
