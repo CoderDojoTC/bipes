@@ -30,33 +30,33 @@ If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](h
 
 - Connect to your device
 
-    - Serial connection ![Serial](../../img/serialConnect1.png)
+    - Serial connection ![Serial](../img/serialConnect1.png)
 
 On the Mac, the Pico will connect to a port in the ```/dev/``` directory such as:
 
 ```/dev/cu.usbmodem140101```
-    - ![Selecting the Serial Port on the Mac](../../img/serial-connect-mac.png)
+    - ![Selecting the Serial Port on the Mac](../img/serial-connect-mac.png)
 
     - Select the comm port for your board
 
  - Select your device:
 
-    - The Raspberry Pi Pico ![Pico](../../img/selectPico.png)
+    - The Raspberry Pi Pico ![Pico](../img/selectPico.png)
     
-    - The Maker Pi RP2040 ![MakerPi](../../img/selectMakerPi.png)
+    - The Maker Pi RP2040 ![MakerPi](../img/selectMakerPi.png)
 
 
 - The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.
 
-![leftNav](../../img/leftNav.png)
+![leftNav](../img/leftNav.png)
 
 ## Using the BIPES Drag and Drop Interface
 
 ### Adding a loop
 
-![Add a Main Loop](../../img/adding-a-main-loop.png)
+![Add a Main Loop](../img/adding-a-main-loop.png)
 
-![](../../img/adding-true.png)
+![](../img/adding-true.png)
 
 ## Test Your Connection
 

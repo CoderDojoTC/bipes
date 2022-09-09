@@ -30,7 +30,7 @@ Note that the duty cycle starts at 0 (always off) and moves slowly up to 65,025 
 3. Can you add a delay so that the LED is completely off for five seconds and then goes to full brightness and off in one second?
 4. What lights in your home would you like to see slowly dim on and off?  How could you modify a light (safely) so that it slowly dimmed on and off.  Would PWM work with all lightbulb types such as tungsten filament bulbs that take a long time to heat up and cool down?
 5. Can you hook up a set of red, green and blue LEDs program them to fade in and out to display all the colors of the rainbow (red, orange, yellow, green, blue, indigo and violet)?
-6. When you stop the program does the LED stop changing brightness?  Does it retain the value that it had when you pressed the Stop function?  What does that tell you about how main CPU and the role of PWM?  Note that we will cover up doing "cleanup" events that stop all PWM activity in our [Interrupt Handlers Lab](../advanced-labs/02-interrupt-handlers.md)
+6. When you stop the program does the LED stop changing brightness?  Does it retain the value that it had when you pressed the Stop function?  What does that tell you about how main CPU and the role of PWM? 
 
 ## References
 

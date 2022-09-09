@@ -20,6 +20,9 @@ nav:
       - Ping sensor: pico/sensors/pingSensor.md
       - Temperature and humidity sensor (DHT11): pico/sensors/dht11Sensor.md
       - Inertial measurement sensor (MPU6050): pico/sensors/mpu6050Sensor.md
+    - Actuators:
+      - RC Servo: pico/actuators/servo.md
+    - Music: pico/music/tunes.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md
