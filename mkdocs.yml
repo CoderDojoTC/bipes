@@ -23,6 +23,8 @@ nav:
     - Actuators:
       - RC Servo: pico/actuators/servo.md
     - Music: pico/music/tunes.md
+  - Maker PI RP2040:
+    - Introduction: makerpi/01-intro.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md
