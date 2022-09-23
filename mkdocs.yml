@@ -25,6 +25,8 @@ nav:
     - Music: pico/music/tunes.md
   - Maker PI RP2040:
     - Introduction: makerpi/01-intro.md
+    - Basic Examples:
+      - Blink: makerpi/basics/blink.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md
