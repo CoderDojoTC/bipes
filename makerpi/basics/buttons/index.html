@@ -774,8 +774,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#still-blinking-the-builtin-leds" class="md-nav__link">
-    Still Blinking the Builtin LEDs
+  <a href="#creating-a-function-to-blink-an-led" class="md-nav__link">
+    Creating a function to blink an LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-sequence-variables-to-control-direction" class="md-nav__link">
+    Creating sequence variables to control direction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-interrupts-to-capture-button-presses" class="md-nav__link">
+    Adding interrupts to capture button presses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-main-loop" class="md-nav__link">
+    The main loop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-entire-set-of-blocks" class="md-nav__link">
+    The entire set of blocks
   </a>
   
 </li>
@@ -881,8 +909,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#still-blinking-the-builtin-leds" class="md-nav__link">
-    Still Blinking the Builtin LEDs
+  <a href="#creating-a-function-to-blink-an-led" class="md-nav__link">
+    Creating a function to blink an LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-sequence-variables-to-control-direction" class="md-nav__link">
+    Creating sequence variables to control direction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-interrupts-to-capture-button-presses" class="md-nav__link">
+    Adding interrupts to capture button presses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-main-loop" class="md-nav__link">
+    The main loop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-entire-set-of-blocks" class="md-nav__link">
+    The entire set of blocks
   </a>
   
 </li>
@@ -913,15 +969,19 @@
 <li>a USB cable</li>
 <li>a Maker Pi RP2040 microcontroller</li>
 </ol>
-<h2 id="still-blinking-the-builtin-leds">Still Blinking the Builtin LEDs</h2>
+<h2 id="creating-a-function-to-blink-an-led">Creating a function to blink an LED</h2>
 <p>We want ot take advantage of BIPES ability to allow us to define our own functions.  So we will use that to create a function to turn an LED on, wait a predetermined amount of time (delay), then turn the LED off, and again wait that same time before return to the calling program.</p>
 <p><img alt="BIPES Blink Function" src="../../../img/makerpi/delayBlinkBlocks.jpg" /></p>
-<p>Next, let's create a pair of variables to determine if which direction the LEDs will sequence, forwards or backwards.  Initially, we don't want to have the LEDs blink at all, so we'll set the variables to false.</p>
+<h2 id="creating-sequence-variables-to-control-direction">Creating sequence variables to control direction</h2>
+<p>Next, let's create a pair of variables to determine which direction the LEDs will sequence, forwards or backwards.  Initially, we don't want to have the LEDs blink at all, so we'll set the variables to false.</p>
 <p><img alt="BIPES Blink Sequence" src="../../../img/makerpi/sequenceBlocks.jpg" /></p>
-<p>Then, we can set up interrupts to capture when a button is pressed on the Maker Pi board, indicating the direction to sequence the LEDs.</p>
+<h2 id="adding-interrupts-to-capture-button-presses">Adding interrupts to capture button presses</h2>
+<p>Then, we can set up a pair of interrupts to capture when a button is pressed on the Maker Pi board, indicating the direction to sequence the LEDs.</p>
 <p><img alt="BIPES Blink Interrupts" src="../../../img/makerpi/interruptBlocks.jpg" /></p>
+<h2 id="the-main-loop">The main loop</h2>
 <p>And finally, the main loop.  It is similar to the previous example; however, there are two added if blocks to determine the sequence direction.</p>
 <p><img alt="BIPES Blink" src="../../../img/makerpi/directionBlinkBlocks.jpg" /></p>
+<h2 id="the-entire-set-of-blocks">The entire set of blocks</h2>
 <p>Putting it all together allows us to sequence the LEDs in one direction, once one button is pressed, then sequence in the opposition direction when the other button is pressed.</p>
 <p><img alt="BIPES Blink" src="../../../img/makerpi/buttonInterruptFunctionBlocks.jpg" /></p>
 <div class="admonition challenge">
