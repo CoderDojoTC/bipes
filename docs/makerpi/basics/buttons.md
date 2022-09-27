@@ -19,7 +19,7 @@ Next, let's create a pair of variables to determine if which direction the LEDs 
 
 Then, we can set up interrupts to capture when a button is pressed on the Maker Pi board, indicating the direction to sequence the LEDs.
 
-![BIPES Blink Interrupts](../../img/makerpi/interruptBlocks.)
+![BIPES Blink Interrupts](../../img/makerpi/interruptBlocks.jpg)
 
 And finally, the main loop.  It is similar to the previous example; however, there are two added if blocks to determine the sequence direction.
 
