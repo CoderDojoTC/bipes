@@ -27,6 +27,7 @@ nav:
     - Introduction: makerpi/01-intro.md
     - Basic Examples:
       - Blink: makerpi/basics/blink.md
+      - Buttons, Interrupts, and Functions: makerpi/basics/buttons.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md

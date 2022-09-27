@@ -1,7 +1,7 @@
 # Blink in BIPES
 
 ## Overview
-In this lab, we will use BIPES to make the blue on-board LEDs on the Maker Pi blink on and off every half second.  The only things you need to run this program are
+In this lab, we will use BIPES to make the blue on-board LEDs on the Maker Pi blink on and off every quarter second.  The only things you need to run this program are
 
 1. BIPES
 2. a USB cable
@@ -9,21 +9,15 @@ In this lab, we will use BIPES to make the blue on-board LEDs on the Maker Pi bl
 
 ## Blinking the Builtin LEDs
 
-The maker pi has thirteen built in blue LEDs wired to logical pins.  Here is a sample program that you can use.  Don't worry about understanding each block yet.  We will cover the various parts in later sections.
+The Maker Pi has thirteen built in blue LEDs wired to logical pins.  Here is a sample program that you can use.  It will blink each one of the LEDs in succession, up and down the board.
 
 ![BIPES Blink](../../img/makerpi/blinkBlocks.jpg)
 
-Take a look at the left navigation.  Each section in the navigation contains different items that you will use to run your program.  We used blocks from _Loops_, _Logic_, _Machine:In_Out Pins_, and _Timing_.
-
-The green block comes from the _Loops_ navigation section.  Anything inside the green block repeats _while true_. _true_ comes from the _Logic_ navigation section. Thus the program will run forever, or until we stop it.  The first blook inside the loop comes from the _Machine:In/Out Pins_ navigation section.  We are setting the onboard LED to _true_ (on).  The next block is a delay for 1/2 second.  The delay comes from the _Timing_ navigation section.  We repeat those two blocks, this time setting the onboard LED to _false_ (off).
+Let's take a look at the blocks...  The top left block creates the initial list, in sequence, running from GP0 to GP28 (one general purpose pin for each of the 13 LEDs).  The block immediately below that creates a second list, in reverse order.  On the right side, we set up a variable to control the amount of time between turning an LED on and turning it off.  Then there is a loop that will run forever, or until we stop the program.  Finally, inside the outer loop is two innner loops.  The first walks through each LED, turning it on, waiting 1/4 second, then turning it off.  The second loop does the same, moving the LEDs on and off in the reverse order.  Notice that we have to convert the pin numbers in the second list to integers, since the list was initialized with a string.
 
 ## Changing the Blink Speed
 
-Next, lets create a variable from the _Variable_ navigation section for the delay that the LED is on and off.  The number in the delay block comes from the _Math_ navigation section.
-
-![BIPES Delay Blink](../../img/makerpi/delayBlinkBlocks.jpg)
-
-This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LED blink faster and slower.
+This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LEDs blink faster and slower.
 
 !!! Challenge
     What is the fastest you can make the LEDs blink and still see them changing?  What does this tell you about the human eye?
