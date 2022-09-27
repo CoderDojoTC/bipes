@@ -782,6 +782,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buttons/" class="md-nav__link">
+        Buttons, Interrupts, and Functions
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -907,21 +921,18 @@
 
 <h1 id="blink-in-bipes">Blink in BIPES</h1>
 <h2 id="overview">Overview</h2>
-<p>In this lab, we will use BIPES to make the blue on-board LEDs on the Maker Pi blink on and off every half second.  The only things you need to run this program are</p>
+<p>In this lab, we will use BIPES to make the blue on-board LEDs on the Maker Pi blink on and off every quarter second.  The only things you need to run this program are</p>
 <ol>
 <li>BIPES</li>
 <li>a USB cable</li>
 <li>a Maker Pi RP2040 microcontroller</li>
 </ol>
 <h2 id="blinking-the-builtin-leds">Blinking the Builtin LEDs</h2>
-<p>The maker pi has thirteen built in blue LEDs wired to logical pins.  Here is a sample program that you can use.  Don't worry about understanding each block yet.  We will cover the various parts in later sections.</p>
+<p>The Maker Pi has thirteen built in blue LEDs wired to logical pins.  Here is a sample program that you can use.  It will blink each one of the LEDs in succession, up and down the board.</p>
 <p><img alt="BIPES Blink" src="../../../img/makerpi/blinkBlocks.jpg" /></p>
-<p>Take a look at the left navigation.  Each section in the navigation contains different items that you will use to run your program.  We used blocks from <em>Loops</em>, <em>Logic</em>, <em>Machine:In_Out Pins</em>, and <em>Timing</em>.</p>
-<p>The green block comes from the <em>Loops</em> navigation section.  Anything inside the green block repeats <em>while true</em>. <em>true</em> comes from the <em>Logic</em> navigation section. Thus the program will run forever, or until we stop it.  The first blook inside the loop comes from the <em>Machine:In/Out Pins</em> navigation section.  We are setting the onboard LED to <em>true</em> (on).  The next block is a delay for 1/2 second.  The delay comes from the <em>Timing</em> navigation section.  We repeat those two blocks, this time setting the onboard LED to <em>false</em> (off).</p>
+<p>Let's take a look at the blocks...  The top left block creates the initial list, in sequence, running from GP0 to GP28 (one general purpose pin for each of the 13 LEDs).  The block immediately below that creates a second list, in reverse order.  On the right side, we set up a variable to control the amount of time between turning an LED on and turning it off.  Then there is a loop that will run forever, or until we stop the program.  Finally, inside the outer loop is two innner loops.  The first walks through each LED, turning it on, waiting 1/4 second, then turning it off.  The second loop does the same, moving the LEDs on and off in the reverse order.  Notice that we have to convert the pin numbers in the second list to integers, since the list was initialized with a string.</p>
 <h2 id="changing-the-blink-speed">Changing the Blink Speed</h2>
-<p>Next, lets create a variable from the <em>Variable</em> navigation section for the delay that the LED is on and off.  The number in the delay block comes from the <em>Math</em> navigation section.</p>
-<p><img alt="BIPES Delay Blink" src="../../../img/makerpi/delayBlinkBlocks.jpg" /></p>
-<p>This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LED blink faster and slower.</p>
+<p>This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LEDs blink faster and slower.</p>
 <div class="admonition challenge">
 <p class="admonition-title">Challenge</p>
 <p>What is the fastest you can make the LEDs blink and still see them changing?  What does this tell you about the human eye?</p>
@@ -959,13 +970,13 @@
             </a>
           
           
-            <a href="../../../glossary/" title="Glossary" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../buttons/" title="Buttons, Interrupts, and Functions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Glossary
+                  Buttons, Interrupts, and Functions
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
