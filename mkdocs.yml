@@ -28,6 +28,8 @@ nav:
     - Basic Examples:
       - Blink: makerpi/basics/blink.md
       - Buttons, Interrupts, and Functions: makerpi/basics/buttons.md
+    - OptumBot:
+      - Motors: makerpi/optumbot/motors.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md
