@@ -29,6 +29,7 @@ nav:
       - Blink: makerpi/basics/blink.md
       - Buttons, Interrupts, and Functions: makerpi/basics/buttons.md
     - OptumBot:
+      - Build: makerpi/optumbot/build.md
       - Motors: makerpi/optumbot/motors.md
       - Follow the Hand: makerpi/optumbot/follow.md
   - Glossary: glossary.md
