@@ -22,6 +22,7 @@ Additional parts (not included in the kit):
 - Wire ties to secure wires
 - Four AA batteries
 - USB Micro B Cable
+- Two optional IR Sensors for line following ![IR Sensor](../../img/makerpi/irSensor.jpg)
 
  **Additional software required:**
 
@@ -106,3 +107,17 @@ White | RXD
 Connect the other end of the grove wire harness to the grove 3 port.
 
 N.B.: If you are using an Apple device to communicate with the bluetooth module, you must use the AT-09 module.  Apple does not support the HC-05 bluetooth version.
+
+**The instructions for using the line sensors are as follows**
+
+![line following chassis](../../img/makerpi/lineFollowChassis.jpg)
+
+Attach the sensors to the front of the chassis as shown above and the wires as below
+
+Wire Color | Sensor Pin
+---------|----------
+Red | VCC
+Black | GND
+White | DO
+
+The left sensor should be connected to Grove 7 and the right sensor should be connected to Grove 1

@@ -32,6 +32,7 @@ nav:
       - Build: makerpi/optumbot/build.md
       - Motors: makerpi/optumbot/motors.md
       - Follow the Hand: makerpi/optumbot/follow.md
+      - Reading from the UART: makerpi/optumbot/readUART.md
   - Glossary: glossary.md
   - Contributing: contributing.md
   - Contacts: contacts.md
