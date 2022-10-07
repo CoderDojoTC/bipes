@@ -826,6 +826,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readUART/" class="md-nav__link">
+        Reading from the UART
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -958,6 +972,7 @@
 <li>Wire ties to secure wires</li>
 <li>Four AA batteries</li>
 <li>USB Micro B Cable</li>
+<li>Two optional IR Sensors for line following <img alt="IR Sensor" src="../../../img/makerpi/irSensor.jpg" /></li>
 </ul>
 <p><strong>Additional software required:</strong></p>
 <ul>
@@ -1080,6 +1095,32 @@
 </table>
 <p>Connect the other end of the grove wire harness to the grove 3 port.</p>
 <p>N.B.: If you are using an Apple device to communicate with the bluetooth module, you must use the AT-09 module.  Apple does not support the HC-05 bluetooth version.</p>
+<p><strong>The instructions for using the line sensors are as follows</strong></p>
+<p><img alt="line following chassis" src="../../../img/makerpi/lineFollowChassis.jpg" /></p>
+<p>Attach the sensors to the front of the chassis as shown above and the wires as below</p>
+<table>
+<thead>
+<tr>
+<th>Wire Color</th>
+<th>Sensor Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>VCC</td>
+</tr>
+<tr>
+<td>Black</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>White</td>
+<td>DO</td>
+</tr>
+</tbody>
+</table>
+<p>The left sensor should be connected to Grove 7 and the right sensor should be connected to Grove 1</p>
 
 
 
