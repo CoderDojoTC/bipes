@@ -23,6 +23,10 @@ nav:
     - Actuators:
       - RC Servo: pico/actuators/servo.md
     - Music: pico/music/tunes.md
+  - Raspberry Pi Pico W:
+    - Introduction: picoW/01-intro.md
+    - Connect to WiFi: picoW/connect.md
+    - Web Server: picoW/webServer.md
   - Maker PI RP2040:
     - Introduction: makerpi/01-intro.md
     - Basic Examples:
