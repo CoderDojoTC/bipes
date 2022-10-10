@@ -17,7 +17,7 @@
     
     
       
-        <title>Web Server - BIPES</title>
+        <title>TCP/IP Socket - BIPES</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-a-web-server-in-bipes" class="md-skip">
+        <a href="#tcpip-socket-connect" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Web Server
+              TCP/IP Socket
             
           </span>
         </div>
@@ -703,66 +703,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Web Server
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../webServer/" class="md-nav__link">
         Web Server
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#web-server-blocks" class="md-nav__link">
-    Web Server Blocks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-the-console" class="md-nav__link">
-    Check the Console
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#open-a-browser-and-enter-the-address-of-the-server" class="md-nav__link">
-    Open a browser and enter the address of the server
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -786,11 +731,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../starWars/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TCP/IP Socket
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         TCP/IP Socket
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-tcpip-socket-connection" class="md-nav__link">
+    What is a TCP/IP Socket Connection?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lets-watch-star-wars" class="md-nav__link">
+    Lets watch Star Wars!
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1072,22 +1065,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#web-server-blocks" class="md-nav__link">
-    Web Server Blocks
+  <a href="#what-is-a-tcpip-socket-connection" class="md-nav__link">
+    What is a TCP/IP Socket Connection?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-console" class="md-nav__link">
-    Check the Console
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#open-a-browser-and-enter-the-address-of-the-server" class="md-nav__link">
-    Open a browser and enter the address of the server
+  <a href="#lets-watch-star-wars" class="md-nav__link">
+    Lets watch Star Wars!
   </a>
   
 </li>
@@ -1104,39 +1090,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/bipes/blob/master/docs/picoW/webServer.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/bipes/blob/master/docs/picoW/starWars.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="creating-a-web-server-in-bipes">Creating a Web Server in BIPES</h1>
-<p>These blocks will turn the Pico W into a small webserver.  The web page has two links in it, one to turn the internal LED on, the other to turn it off.  Make sure to fill in your network name and password to connect to your WiFi Network.  Then take a look at the console to see the address of the webserver once the webserver starts.</p>
-<h2 id="web-server-blocks">Web Server Blocks</h2>
-<p><img alt="Web Server" src="../../img/picoW/webServer.jpg" /></p>
-<h2 id="check-the-console">Check the Console</h2>
-<p>Take a look at the console to see the address of the webserver once the webserver starts. </p>
-<p><img alt="Web Server Console" src="../../img/picoW/webServerConsole.jpg" /></p>
-<p>Try the "Soft reset device" button on the console if you get an ENOMEM error when the web server connects. </p>
-<h2 id="open-a-browser-and-enter-the-address-of-the-server">Open a browser and enter the address of the server</h2>
-<p>Make sure your device is on WiFi!  If you are using your phone, turn off cellular before trying to connect. You should see the following web page:</p>
-<p><img alt="Web Page" src="../../img/picoW/webServerPage.jpg" /></p>
-<p>Click on Turn On to turn on the internal LED.  Click on Turn Off to turn it off.  It may take a few moments after clicking to see the page render and the LED react.  Be Patient!</p>
-<div class="admonition challenges">
-<p class="admonition-title">Challenges</p>
-</div>
-<p>The Pico W shares many of the same pins as the Pico.</p>
-<ul>
-<li>
-<p>Can you use one of the GPIO pins to turn on and off an external LED?</p>
-</li>
-<li>
-<p>Can you use one of the ADC pins to read and display a voltage?</p>
-</li>
-<li>
-<p>Can you use a display and send a message?</p>
-</li>
-</ul>
+<h1 id="tcpip-socket-connect">TCP/IP Socket Connect</h1>
+<h2 id="what-is-a-tcpip-socket-connection">What is a TCP/IP Socket Connection?</h2>
+<p>A socket programming interface provides the routines required for interprocess communication between applications, either on the local system or spread in a distributed, TCP/IP based network environment. Once a peer-to-peer connection is established, a socket descriptor is used to uniquely identify the connection. The socket descriptor itself is a task specific numerical value.</p>
+<h2 id="lets-watch-star-wars">Lets watch Star Wars!</h2>
+<p>Using our WiFi connection and our Pic oW, we can use BIPES to connect to a site that will show Star Wars: The New Hope as ASCII art.  We'll connect to the site towel.blinkenlights.nl on Port 23.  Then we will read data from the site and display the data in the console.  Sit back, relax, and enjoy the movie after entering your WiFi network name and password using the following blocks:</p>
+<p><img alt="Star Wars" src="../../img/picoW/starWarsBlocks.jpg" /></p>
+<p>R2-D2 and C3PO as ASCII art in the movie</p>
+<p><img alt="Droids" src="../../img/picoW/droids.jpg" /></p>
 
 
 
@@ -1155,7 +1122,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../connect/" title="Connect to WiFi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../httpGet/" title="Getting Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -1164,19 +1131,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Connect to WiFi
+                  Getting Data
                 </span>
               </div>
             </a>
           
           
-            <a href="../httpGet/" title="Getting Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../../makerpi/01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Getting Data
+                  Introduction
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
