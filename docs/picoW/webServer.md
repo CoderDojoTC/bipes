@@ -1,6 +1,6 @@
 # Creating a Web Server in BIPES
 
-These blocks will turn the Pico W into a small webserver.  The web page has two links in it, on to turn the internal LED on, the other to turn it off.  Make sure to fill in your network name and password to connect to your WiFi Network.  Then take a look at the console to see the address of the webserver once the webserver starts.
+These blocks will turn the Pico W into a small webserver.  The web page has two links in it, one to turn the internal LED on, the other to turn it off.  Make sure to fill in your network name and password to connect to your WiFi Network.  Then take a look at the console to see the address of the webserver once the webserver starts.
 
 ## Web Server Blocks
 

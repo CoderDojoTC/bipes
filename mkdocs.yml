@@ -27,6 +27,7 @@ nav:
     - Introduction: picoW/01-intro.md
     - Connect to WiFi: picoW/connect.md
     - Web Server: picoW/webServer.md
+    - Getting Data: picoW/httpGet.md
   - Maker PI RP2040:
     - Introduction: makerpi/01-intro.md
     - Basic Examples:
