@@ -88,3 +88,4 @@ The program cycles each pixel through all the colors in a rainbow.  It uses two 
 * [Core Electronics: How to use WS2812B RGB LEDs with Raspberry Pi Pico](https://core-electronics.com.au/tutorials/how-to-use-ws2812b-rgb-leds-with-raspberry-pi-pico.html) - HTML page, sample code and video
 * [MicroPython Library for NeoPixel (used before version 1.18 of the MicroPython RP2 Runtime)](https://docs.micropython.org/en/latest/library/neopixel.html) - note the lack of support for the RP2040 microcontroller.
 * [rp2 port no module named array](https://github.com/micropython/micropython/issues/6837)
+* For additional NeoPixel projects, check out the [Moving Rainbow Site](https://jetannenbaum.github.io/bipes-moving-rainbow/)
