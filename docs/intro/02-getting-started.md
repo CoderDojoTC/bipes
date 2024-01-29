@@ -6,61 +6,24 @@ Before getting started with BIPES, follow the directions below to setup your mic
 
 However, before getting started with BIPES, your microcontroller board must be setup.  Regardless of which board you are using, you should start by doing the following steps:
 
-- Download the [flash_nuke.utf](https://datasheets.raspberrypi.com/soft/flash_nuke.uf2) file to your computer.
+1. Get the latest firmware release from [MicroPython.org](https://micropython.org/download/rp2-pico/)
 
-- Download the latest [MicroPython utf](https://micropython.org/download/rp2-pico/rp2-pico-latest.uf2) file to your computer. 
+    - Download the latest stable uf2 file to your computer
 
-- Hold down the BOOTSEL button on the Pico or the BOOT button on the Maker Pi then connect your microcontroller board to your computer with a micro usb cable and it will appear as a drive onto which you can drag the flash_nuke.uf2 file
+2. Hold down the boot button on the board (white button)
 
-    - If you don't see the Maker Pi board, make sure the on/off switch is in the on position before connecting to your computer.
+    - Plug one end of the USB cable into the board and the other end into your computer
 
-- Once the drive reappears, copy the MicroPython utf file to your device.
+    - Release the boot button
 
-If you are having trouble, take a look at the [Drag-and-Drop MicroPython page](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython)
+3. The Pico will show up as a new drive (labeled RPI-RP2) available on your computer
 
-## Working with BIPES
+4. Copy the downloaded uf2 file onto the RPI-RP2 drive
 
- Working with BIPES is easy, since there is nothing to load on your computer. [BIPES can be found online](https://bipes.net.br/pico/ui/).  Once the Welcome screen loads in your browser, you can do the following:
+    - The Pico will reboot and be ready to use
 
- - Close the Welcome screen
-  
-  There are two configurations you must change.  Your serial port and device.
+    - The RPI-RP2 drive will no longer be visable on your computer.
 
-  ![](../img/select-port-and-device.png)
+![Install MicroPython](../img/installMicroPython.gif)
 
-- Connect to your device
-
-    - Serial connection ![Serial](../img/serialConnect1.png)
-
-On the Mac, the Pico will connect to a port in the ```/dev/``` directory such as:
-
-```/dev/cu.usbmodem140101```
-    - ![Selecting the Serial Port on the Mac](../img/serial-connect-mac.png)
-
-    - Select the comm port for your board
-
- - Select your device:
-
-    - The Raspberry Pi Pico ![Pico](../img/selectPico.png)
-    
-    - The Maker Pi RP2040 ![MakerPi](../img/selectMakerPi.png)
-
-
-- The left navigation pane contains all of the blocks you will need to run the examples for the Raspberry Pi Pico and the Maker Pi RP2040 microcontrollers.
-
-![leftNav](../img/leftNav.png)
-
-## Using the BIPES Drag and Drop Interface
-
-### Adding a loop
-
-![Add a Main Loop](../img/adding-a-main-loop.png)
-
-![](../img/adding-true.png)
-
-## Test Your Connection
-
-The best way to test your connection is to write a small program that will flash the on-board LED.  See the basic blink example under Raspberry Pi Pico.
-
-
-- Congratulations!  You are ready to start using BIPES.
+Modified image courtesy of Raspberry Pi

@@ -5,6 +5,7 @@ nav:
   - Introduction:
     - About BIPES: intro/01-intro.md
     - Getting Started: intro/02-getting-started.md
+    - Working With BIPES: intro/03-working-with-bipes.md
   - Raspberry Pi Pico:
     - Introduction: pico/01-intro.md
     - Basic Examples:
