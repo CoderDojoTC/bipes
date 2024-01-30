@@ -13,17 +13,17 @@
       
       
       
-        <link rel="prev" href="../../01-intro/">
+        <link rel="prev" href="../blink/">
       
       
-        <link rel="next" href="../blinkExternal/">
+        <link rel="next" href="../fadeInAndOut/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Blink (Internal LED) - BIPES</title>
+        <title>Blink (External LEDs) - BIPES</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blink-in-bipes" class="md-skip">
+        <a href="#blinking-external-leds" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blink (Internal LED)
+              Blink (External LEDs)
             
           </span>
         </div>
@@ -393,6 +393,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../blink/" class="md-nav__link">
+        Blink (Internal LED)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -404,76 +418,10 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Blink (Internal LED)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Blink (Internal LED)
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-the-blocks" class="md-nav__link">
-    Finding the Blocks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#blinking-the-builtin-led" class="md-nav__link">
-    Blinking the Builtin LED
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changing-the-blink-speed" class="md-nav__link">
-    Changing the Blink Speed
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../blinkExternal/" class="md-nav__link">
         Blink (External LEDs)
       </a>
+      
     </li>
   
 
@@ -1119,42 +1067,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-the-blocks" class="md-nav__link">
-    Finding the Blocks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#blinking-the-builtin-led" class="md-nav__link">
-    Blinking the Builtin LED
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changing-the-blink-speed" class="md-nav__link">
-    Changing the Blink Speed
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1171,42 +1083,19 @@
   
 
 
-<h1 id="blink-in-bipes">Blink in BIPES</h1>
-<p><img alt="Blink GIF" src="../../../img/blink-on-board-led.gif" /></p>
-<h2 id="overview">Overview</h2>
-<p>In this lab, we will use BIPES to make the green on-board LED on the Raspberry Pi Pico blink on and off every half second.  The only things you need to run this program are</p>
-<ol>
-<li>BIPES</li>
-<li>a USB cable</li>
-<li>a Raspberry Pi Pico microcontroller</li>
-</ol>
-<h2 id="finding-the-blocks">Finding the Blocks</h2>
-<p>Take a look at the left navigation.  Each section in the navigation contains different items that you will use to run your program.  We will use blocks from <em>Loops</em>, </p>
-<p><img alt="Loop" src="../../../img/pico/repeatWhileLoop.jpg" /> </p>
-<p><em>Logic</em>,</p>
-<p><img alt="Logic" src="../../../img/pico/true.jpg" /> </p>
-<p><em>Machine:In/Out Pins</em> (Change the pin to LED / GPIO25),</p>
-<p><img alt="machine" src="../../../img/pico/setOutputPin.jpg" /> </p>
-<p>and <em>Timing</em> (Change the delay time to .5) sections.</p>
-<p><img alt="timing" src="../../../img/pico/delay.jpg" /> </p>
-<h2 id="blinking-the-builtin-led">Blinking the Builtin LED</h2>
-<p>The pico has a single built in green LED wired to logical pin 25.  We call this GPIO 25.  GPIO means General Purpose Input and Output pin. Here is a sample program that you can use.  Don't worry about understanding each block yet.  We will cover the various parts in later sections.</p>
-<p><img alt="BIPES Blink" src="../../../img/pico/blink.GIF" /></p>
-<p>Anything inside the green block repeats <em>while true</em>. Thus the program will run forever, or until we stop it.  We are setting the onboard LED to <em>true</em> (on).  The next block is a delay for 1/2 second.  We repeat those two blocks, this time setting the onboard LED to <em>false</em> (off).</p>
-<h2 id="changing-the-blink-speed">Changing the Blink Speed</h2>
-<p>Next, lets create a variable from the <em>Variable</em> navigation section for the delay that the LED is on and off.   Click on the Create variable... block to create a variable named delay. </p>
-<p><img alt="variable" src="../../../img/pico/variable.jpg" /> </p>
-<p>Once the delay variable is created, new blocks will be created in the <em>Variable</em> navigation section</p>
-<p><img alt="delay variable" src="../../../img/pico/delayVariable.jpg" /> </p>
-<p>The number in the delay block comes from the <em>Math</em> navigation section.</p>
-<p><img alt="math" src="../../../img/pico/math.jpg" /> </p>
-<p>Now we can change the blink speed easily, by only changing the value of the delay variable.</p>
-<p><img alt="BIPES Delay Blink" src="../../../img/pico/delayBlink.GIF" /></p>
-<p>This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LED blink faster and slower.</p>
-<div class="admonition challenge">
-<p class="admonition-title">Challenge</p>
-<p>What is the fastest you can make the LED blink and still see it changing?  What does this tell you about the human eye?</p>
-</div>
+<h1 id="blinking-external-leds">Blinking external LEDs</h1>
+<p>Although the builtin LED is convenient, you can use the code to blink any number of external LEDs that are connected through a 330 ohm resister in series to the LED.</p>
+<p>We will need to use the breadboard for this lab.  If the Pico isn't already inserted into the breadboard, do so now.  Pin 1 (Top left pin) should be inserted into c1 of the breadboard.</p>
+<p>Hints:</p>
+<ul>
+<li>We will assume that LEDs are connected to pins GPIO16 and GPIO17 and are connected via a 330 ohm resistor to ground.</li>
+<li>The longer lead on the LED is the Anode (+) lead, connect it to the GPIO pins on the Pico</li>
+<li>Modify the first program</li>
+<li>Note which GPIO pins are connected to each LED.  They should be the two bottom pins on the right side.</li>
+</ul>
+<p><img alt="BIPES external LEDS" src="../../../img/pico/externalLEDS.jpg" /></p>
+<p>Here are the blocks that will blink the LEDs that are connected to GPIO16 &amp; GPIO17 10 times, then turn off the remaining lit LED.  Note that we are using a different loop block from the <em>Loops</em> navigation section.  This loop block allows us to determine a set number of times that the code inside the loop will be executed.</p>
+<p><img alt="BIPES external LEDS Blocks" src="../../../img/pico/externalLEDsBlocks.jpg" /></p>
 
 
 
@@ -1227,7 +1116,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../../01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../blink/" title="Blink (Internal LED)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -1236,19 +1125,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Introduction
+                  Blink (Internal LED)
                 </span>
               </div>
             </a>
           
           
-            <a href="../blinkExternal/" title="Blink (External LEDs)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../fadeInAndOut/" title="Fade in and out" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Blink (External LEDs)
+                  Fade in and out
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
