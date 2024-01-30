@@ -15,3 +15,20 @@ Hints:
 Here are the blocks that will blink the LEDs that are connected to GPIO16 & GPIO17 10 times, then turn off the remaining lit LED.  Note that we are using a different loop block from the _Loops_ navigation section.  This loop block allows us to determine a set number of times that the code inside the loop will be executed.
 
 ![BIPES external LEDS Blocks](../../img/pico/externalLEDsBlocks.jpg)
+
+!!! Challenge
+    Can you use a List with a Loop and Logic to make a set of 4 LEDS blink in sequence?
+
+    Hints:
+    
+    - Create a List block with the pins that connect to the LEDs
+
+    ![List of Pins](../../img/pico/listOfPins.jpg)
+
+    - Use the "for each item in list" Loop block to select the LED to turn on
+
+    ![For Each Item in List of Pins](../../img/pico/forEachItemInList.jpg)
+        
+    - Use a second "for each item in list" Loop block with a conditional Logic block to turn off the other LEDs
+
+    ![For Each Item in List of Pins](../../img/pico/listWithConditional.jpg)
