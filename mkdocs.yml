@@ -9,7 +9,8 @@ nav:
   - Raspberry Pi Pico:
     - Introduction: pico/01-intro.md
     - Basic Examples:
-      - Blink: pico/basics/blink.md
+      - Blink (Internal LED): pico/basics/blink.md
+      - Blink (External LEDs): pico/basics/blinkExternal.md
       - Fade in and out: pico/basics/fadeInAndOut.md
       - Button: pico/basics/button.md
       - Potentiometer: pico/basics/potentiometer.md
