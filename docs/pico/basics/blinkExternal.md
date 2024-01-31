@@ -21,9 +21,10 @@ Here are the blocks that will blink the LEDs that are connected to GPIO16 & GPIO
 
     Hints:
     
-    - Create a List block with the pins that connect to the LEDs
+    - Create a List block with the pins that connect to the LEDs.  Note: You can use the settings gear ![Settings Gear](../../img/pico/settings.jpg) to change the number of list items.
 
     ![List of Pins](../../img/pico/listOfPins.jpg)
+
 
     - Use the "for each item in list" Loop block to select the LED to turn on
 
