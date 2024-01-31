@@ -25,7 +25,6 @@ Here are the blocks that will blink the LEDs that are connected to GPIO16 & GPIO
 
     ![List of Pins](../../img/pico/listOfPins.jpg)
 
-
     - Use the "for each item in list" Loop block to select the LED to turn on
 
     ![For Each Item in List of Pins](../../img/pico/forEachItemInList.jpg)
