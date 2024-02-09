@@ -12,7 +12,10 @@ nav:
       - Blink (Internal LED): pico/basics/blink.md
       - Blink (External LEDs): pico/basics/blinkExternal.md
       - Fade in and out: pico/basics/fadeInAndOut.md
-      - Button: pico/basics/button.md
+      - Button: 
+        - Button Overview: pico/basics/button.md
+        - Polling: pico/basics/buttonPolling.md
+        - Interrupt: pico/basics/buttonInterrupt.md
       - Potentiometer: pico/basics/potentiometer.md
     - Displays:
       - SSD1306 OLED: pico/displays/ssd1306.md
