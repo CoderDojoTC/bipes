@@ -2,7 +2,9 @@
 
 Although the polling version is simple, it does take a lot of the CPU resources.  The button.value() is checked 10 times a second, even though the button might only be pressed once a day!
 
-A more efficient version uses a strategy called an [interrupt handler](../advanced-labs/02-interrupt-handlers).  This is a function that is "registered" by micropython to handle external events such as a button press.
+Now think about your phone again.  This time, when you send a message to your friend the phone will beep whn your friend replies.  This is known as an interrupt.  You don't have to constantly check your phone, your phone interrrupts you when a message is received!
+
+A more efficient version to handle button presses (or outside actions) uses a strategy called an [interrupt handler](../advanced-labs/02-interrupt-handlers).  This is a function that is "registered" by micropython to handle external events such as a button press.
 
 ![Polling Blocks](../../img/pico/interruptBlocks.jpg)
 

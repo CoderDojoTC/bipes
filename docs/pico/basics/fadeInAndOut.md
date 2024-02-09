@@ -23,14 +23,13 @@ Here is the sample set of blocks that will slowly brighten, then dim the builtin
 
 Note that the duty cycle starts at 0 (always off) and moves slowly up to 65,025 (always on).  It then does the reverse and slowly dims the LED and then repeats.  There is only a 1 microsecond of a delay between these changes so the LED will completely turn on in about 8.5 seconds before it starts to dim again.
 
-## Suggested Exercises
-
-1. Change the frequency from 1,000 to 500, 100, 50, 40, 30, 25, 20, and 10.  When can you just barley see it flicker?  What does this tell you about the human eye?
-2. Can you add a delay so that the LED stays on at full brightness for one second before it starts to dim again?
-3. Can you add a delay so that the LED is completely off for five seconds and then goes to full brightness and off in one second?
-4. What lights in your home would you like to see slowly dim on and off?  How could you modify a light (safely) so that it slowly dimmed on and off.  Would PWM work with all lightbulb types such as tungsten filament bulbs that take a long time to heat up and cool down?
-5. Can you hook up a set of red, green and blue LEDs and program them to fade in and out to display all the colors of the rainbow (red, orange, yellow, green, blue, indigo and violet)?
-6. When you stop the program does the LED stop changing brightness?  Does it retain the value that it had when you pressed the Stop function?  What does that tell you about how main CPU and the role of PWM? 
+!!! Challenge
+    1. Change the frequency from 1,000 to 500, 100, 50, 40, 30, 25, 20, and 10.  When can you just bareley see it flicker?  What does this tell you about the human eye?
+    2. Can you add a delay so that the LED stays on at full brightness for one second before it starts to dim again?
+    3. Can you add a delay so that the LED is completely off for five seconds and then goes to full brightness and off in one second?
+    4. What lights in your home would you like to see slowly dim on and off?  How could you modify a light (safely) so that it slowly dimmed on and off.  Would PWM work with all lightbulb types such as tungsten filament bulbs that take a long time to heat up and cool down?
+    5. Can you hook up a set of red, green and blue LEDs and program them to fade in and out to display all the colors of the rainbow (red, orange, yellow, green, blue, indigo and violet)?
+    6. When you stop the program does the LED stop changing brightness?  Does it retain the value that it had when you pressed the Stop function?  What does that tell you about how main CPU and the role of PWM? 
 
 ## References
 

@@ -27,28 +27,16 @@ Note: to get an accurate noise-free reading from the potentiometer you must use 
 
 ![](../../img/pico/potentiometerValuesBlocks.jpg)
 
-```mermaid
-graph LR
-p[Pico]-->|ADC_VREF 36 row=6| pos(Positive)
-p[Pico]-->|AGND 33 row=8| neg(Negative)
-p[Pico]-->|GP26 pin=26 ADC0 31 row=10| tap(Center Tap)
-    pos(Positive) --- pot(Potentiometer)
-    neg(Negative) --- pot(Potentiometer)
-    tap(Center Tap) --- pot(Potentiometer)
-```
-
-Connect the positive to pin 35 ADC_REF (row 6 on the breadboard) and the negative to pin 33 AGND (row 8 on the breadboard).  The Pico has special noise reduction circuits to avoid power supply jitter on these reference pins.
-
 ## Changing Blink Speed with a Potentiometer
 
 ![](../../img/pico/variableBlinkBlocks.jpg)
 
-The following video shows this script in action.
+The following video shows these blocks in action.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lFfSTOOrsIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Changing the Brightness of the Built in LED
-We can change the brightness of the builtin LED by using the POT value to change the PWM duty cycle.
+!!! Challenge
+    Changing the Brightness of the Built in LED:
 
-Here is a sample set of blocks that does this:
-
-![](../../img/pico/variableBrightBlocks.jpg)
+    Now that we know how to read data from the potentiometer via the built-in analog to digital converter, we want to use that data to vary the brightness of the LED.  
+ 
+    Remember that the brightness of the LED can be set by changing the duty cycle of the pulse width modulation, just like we did in a previous lab.
