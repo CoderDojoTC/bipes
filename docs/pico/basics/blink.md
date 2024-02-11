@@ -27,9 +27,9 @@ and _Timing_ (Change the delay time to .5) sections.
 
 ![timing](./../../img/pico/delay.jpg) 
 
-## Blinking the Builtin LED
+## Blinking the Built in LED
 
-The pico has a single built in green LED wired to logical pin 25.  We call this GPIO 25.  GPIO means General Purpose Input and Output pin. Here is a sample program that you can use.  Don't worry about understanding each block yet.  We will cover the various parts in later sections.
+The pico has a single built in green LED wired to logical pin 25.  We call this GPIO 25.  GPIO means General Purpose Input and Output pin. Here is a sample set of blocks that you can use.  Don't worry about understanding each block yet.  We will cover the various parts in later sections.
 
 ![BIPES Blink](../../img/pico/blink.GIF)
 
@@ -37,7 +37,7 @@ Anything inside the green block repeats _while true_. Thus the program will run 
 
 ## Changing the Blink Speed
 
-Next, lets create a variable from the _Variable_ navigation section for the delay that the LED is on and off.   Click on the Create variable... block to create a variable named delay. 
+Next, lets create a variable from the _Variable_ navigation section for the delay that the LED is on and off.   Click on the Create variable... block to create a variable named _delay_. 
 
 ![variable](./../../img/pico/variable.jpg) 
 
@@ -53,7 +53,7 @@ Now we can change the blink speed easily, by only changing the value of the dela
 
 ![BIPES Delay Blink](../../img/pico/delayBlink.GIF)
 
-This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LED blink faster and slower.
+This program will blink the built-in LED on and off every 1/4 of a second.  By changing the delay variable you can make the LED blink faster or slower.
 
 !!! Challenge
     What is the fastest you can make the LED blink and still see it changing?  What does this tell you about the human eye?

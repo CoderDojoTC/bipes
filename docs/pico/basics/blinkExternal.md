@@ -1,5 +1,5 @@
 # Blinking external LEDs
-Although the builtin LED is convenient, you can use the code to blink any number of external LEDs that are connected through a 330 ohm resister in series to the LED.
+Although the built in LED is convenient, you can use the code to blink any number of external LEDs that are connected through a 330 ohm resister in series to the LED.
 
 We will need to use the breadboard for this lab.  If the Pico isn't already inserted into the breadboard, do so now.  Pin 1 (Top left pin) should be inserted into c1 of the breadboard.
 

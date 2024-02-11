@@ -2,9 +2,11 @@
 
 In the prior Blink labs, we turned LEDs on an off at different speeds.  But what if we want to slowly turn on our LED on and off?  In this lab we will show you how to dim your LED to any brightness level you want.
 
-## Welcome to Pulse Width Modulation
+## Welcome to Pulse Width Modulation (PWM)
 
 Although digital computers are good at quickly turning signals on and off, they don't really allow us to easily set an output to a given voltage level without complex circuits.  But there is an easier way to adjust the brightness of an LED!  We can quickly turn the signal to the LED on and off.  We can do this so quickly that you can't even see it flicker.  Controlling the amount of time a signal is on is all about controlling the width of the ON pulse.  That is why this is called Pulse Width Modulation or PWM for short.
+
+We can think of the voltage at a pin being on (True) or off (False) as being part of a square wave.  The top of the square wave represents the voltage being on and the bottom of the square wave represents teh voltage being off.
 
 With a PWM design there are two things we need to tell the microcontroller:
 
@@ -17,7 +19,7 @@ A GPIO pin is declared a PWM output when you use the PWM block found in the _Mac
 
 Note that we can slow the frequency way down and the dimming effect will still work.  As an experiment you can change the PWM frequency to around 20 and you will see a distinct flicker as the LED turns on.
 
-Here is the sample set of blocks that will slowly brighten, then dim the builtin LED that is on pin 25:
+Here is the sample set of blocks that will slowly brighten, then dim the built in LED that is on pin 25:
 
 ![PWM Blocks](../../img/pico/pwmBlocks.jpg)
 
